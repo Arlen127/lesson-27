@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open-Sans',sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -14,7 +15,6 @@ body {
     padding: 20px 15px;
   }
 }
-
 
 /*!
  * Hamburgers
@@ -85,7 +85,6 @@ body {
 .hamburger-inner::after {
   bottom: -10px;
 }
-
 
 .hamburger--spin .hamburger-inner {
   transition-duration: 0.22s;
