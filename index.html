@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="flexbox">
+    <div class="logo">
+      <h3 class="logo__title">Web.Dev</h3>
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav__link">Home</a>
+      <a href="#" class="nav__link">About</a>
+      <a href="#" class="nav__link">Testimonials</a>
+      <a href="#" class="nav__link">Contact</a>
+    </nav>
+    <button class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div class="buttons">
+      <button class="buttons__item buttons__control">Sign in</button>
+      <button class="buttons__item">Sign up</button>
+    </div>
+  </div>
+  </div>
+  <div class="post">
+    <div class="image">
+      <img src="img/cosmetic.jpg" alt="" class="img">
+    </div>
+    <div class="info">
+      <h1 class="info__title">We Develop
+        <span class="info__color">Shopify</span> sites</h1>
+        <p class="info__text">
+          Slingback fabric heels. Thin wraparound ankle strap. Squared heel and toe. Pointed toes. Padded insole with geometrical design. 
+        </p>
+        <button class="buttons__item">Contact Us</button>
+        <a href="#" class="info__link">Watch Video</a>
+    </div>
+    <div class="image">
+      <img src="img/cosmetic2.jpg" alt="" class="img">
+    </div>
+  </div>
+  </header>
+
+
+  <script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    var nav = document.querySelector(".nav");
+    // On click
+    hamburger.addEventListener("click", function () {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+      nav.classList.toggle("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
+</body>
+</html>
